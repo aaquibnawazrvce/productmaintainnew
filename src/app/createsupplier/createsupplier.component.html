@@ -1,0 +1,76 @@
+<div class="container">
+  <h1> Supplier Creation</h1>
+  <form>
+
+    <div class="form-group">
+      <label for="supplername"> Supplier Name: </label>
+      <input type="text" class="form-control-sm"
+      name="suppliername" id="suppliername"
+      placeholder="Supplier Name">
+    </div>
+
+    <div class="form-group">
+      <label for="supplierdesc"> Supplier Description:
+      </label>
+      <input type="text" class="form-control"
+      name="supplierdesc" id="supplierdesc"
+      placeholder="Supplier Decription">
+    </div>
+
+    <div formGroupName="address">
+
+      <div class="form-group">
+        <label for="country"> Country:
+        </label>
+        <input type="text" class="form-control"
+        name="country" id="country"
+        placeholder="Supplier Country">
+      </div>
+
+      <div class="form-group">
+        <label for="city"> City:
+        </label>
+        <input type="text" class="form-control"
+        name="city" id="city"
+        placeholder="Supplier City">
+      </div>
+
+      <div class="form-group">
+        <label for="state"> State:
+        </label>
+        <input type="text" class="form-control"
+        name="state" id="state"
+        placeholder="Supplier State">
+      </div>
+
+
+      <div class="form-group">
+        <label for="zipcode"> Zip Code:
+        </label>
+        <input type="text"
+        class="form-control"
+        name="zipcode" id="zipcode"
+        placeholder="Supplier Zip Code">
+      </div>
+
+      <div>
+        <textarea  class="form-control"
+        name="addressdesc" id="addressdesc"
+        rows="2"
+        cols="10"
+        placeholder="Enter Address">
+
+        </textarea>
+      </div>
+
+    </div>
+
+
+    <button class="btn btn-primary"> Save Supplier </button>
+
+  </form>
+
+  <div class="alert alert-success">
+  </div>
+
+</div>

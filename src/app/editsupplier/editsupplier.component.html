@@ -1,0 +1,99 @@
+<p>suppliermaintain works!</p>
+
+<div class="container">
+  <h1> Supplier Editing using Form Builder</h1>
+
+  <div  class="alert alert-danger">
+  </div>
+
+  <div class="alert alert-success">
+
+  </div>
+
+  <form >
+
+    <div class="form-group">
+      <label for="suppliername"> Supplier Name: </label>
+      <input type="text" class="form-control-sm"
+      formControlName="suppliername"
+      name="suppliername" id="suppliername"
+      placeholder="Supplier Name"
+
+      >
+
+
+
+
+    </div>
+
+    <div class="form-group">
+      <label for="supplierdesc"> Supplier Description:
+      </label>
+      <input type="text" class="form-control"
+      name="supplierdesc" id="supplierdesc"
+      placeholder="Supplier Decription">
+    </div>
+
+
+    <div formGroupName="address">
+
+      <div class="form-group">
+        <label for="country"> Country:
+        </label>
+        <input type="text" class="form-control"
+        name="country" id="country"
+        placeholder="Supplier Country">
+      </div>
+
+      <div class="form-group">
+        <label for="city"> City:
+        </label>
+        <input type="text" class="form-control"
+        name="city" id="city"
+        placeholder="Supplier City">
+      </div>
+
+      <div class="form-group">
+        <label for="state"> State:
+        </label>
+        <input type="text" class="form-control"
+        name="state" id="state"
+        placeholder="Supplier State">
+      </div>
+
+
+      <div class="form-group">
+        <label for="zipcode"> Zip Code:
+        </label>
+        <input type="text"
+        class="form-control"
+        name="zipcode" id="zipcode"
+        placeholder="Supplier Zip Code">
+      </div>
+
+      <div class="form-group">
+        <label for="addressdesc"> Address Description:
+        </label>
+        <textarea
+        class="form-control" rows="2" columns="10"
+        name="addressdesc" id="addressdesc"
+        placeholder="Supplier Address Details">
+        </textarea>
+      </div>
+
+
+    </div>
+
+
+
+
+       <button class="btn btn-primary">
+        Save Supplier </button>
+
+  </form>
+
+  <div class="alert alert-success">
+
+  </div>
+
+</div>

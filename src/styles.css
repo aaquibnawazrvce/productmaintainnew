@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+button{
+  background: orange;
+  border:2px solid black;
+  padding:1em;
+  margin:1em;
+}
+
+a{
+  padding: 1em;
+  margin: 1em;
+  background: orange;
+  height: 1em;
+  width: 2em;
+}
+
+.heightme{
+  height: 3em;
+}
+/*
+* Add this after finishing demo of routerLink
+*/
+a.active{
+background: pink;
+}

@@ -1,10 +1,11 @@
 <div class="container">
   <h1> Supplier Creation</h1>
-  <form>
+  <form [formGroup]="supplierform">
 
     <div class="form-group">
       <label for="supplername"> Supplier Name: </label>
       <input type="text" class="form-control-sm"
+      formControlName="suppliername"
       name="suppliername" id="suppliername"
       placeholder="Supplier Name">
     </div>
@@ -14,6 +15,7 @@
       </label>
       <input type="text" class="form-control"
       name="supplierdesc" id="supplierdesc"
+      formControlName="supplierdesc"
       placeholder="Supplier Decription">
     </div>
 
@@ -24,6 +26,7 @@
         </label>
         <input type="text" class="form-control"
         name="country" id="country"
+        formControlName="country"
         placeholder="Supplier Country">
       </div>
 
@@ -32,6 +35,7 @@
         </label>
         <input type="text" class="form-control"
         name="city" id="city"
+        formControlName="city"
         placeholder="Supplier City">
       </div>
 
@@ -40,6 +44,7 @@
         </label>
         <input type="text" class="form-control"
         name="state" id="state"
+        formControlName="state"
         placeholder="Supplier State">
       </div>
 
@@ -50,18 +55,10 @@
         <input type="text"
         class="form-control"
         name="zipcode" id="zipcode"
+        formControlName="zipcode"
         placeholder="Supplier Zip Code">
       </div>
 
-      <div>
-        <textarea  class="form-control"
-        name="addressdesc" id="addressdesc"
-        rows="2"
-        cols="10"
-        placeholder="Enter Address">
-
-        </textarea>
-      </div>
 
     </div>
 
@@ -71,6 +68,7 @@
   </form>
 
   <div class="alert alert-success">
+    {{supplierform.value | json}}
   </div>
 
 </div>

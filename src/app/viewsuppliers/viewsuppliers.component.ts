@@ -14,8 +14,5 @@ export class ViewsuppliersComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getAllSuppliers(): void{
-
-  }
 
 }

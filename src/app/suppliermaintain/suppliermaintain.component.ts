@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-suppliermaintain',
@@ -7,15 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuppliermaintainComponent implements OnInit {
 
-  constructor() {
+  suppliermaintainform: any;
 
+  constructor(private formBuilder: FormBuilder) {
+
+    this.suppliermaintainform = this.formBuilder.group({
+      suppliername: ['', [Validators.required, Validators.minLength(5)]],
+      supplierdesc: [''],
+      address: this.formBuilder.group({
+        country: [''],
+        city: [''],
+        state: [''],
+        zipcode: [''],
+        addressdesc: ['']
+      })
+
+    });
   }
 
   ngOnInit(): void {
-  }
-
-  saveSupplier(): void{
-
   }
 
 }

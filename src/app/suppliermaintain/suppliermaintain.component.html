@@ -3,6 +3,14 @@
 <div class="container">
   <h1> Supplier Creation using Form Builder</h1>
 
+  <div *ngIf="(errorMsg!=null && errorMsg!='')" class="alert alert-danger">
+    {{errorMsg}}
+  </div>
+
+  <div *ngIf="(successMsg!=null && successMsg!='')" class="alert alert-success">
+    {{successMsg}}
+  </div>
+
   <form [formGroup]="suppliermaintainform">
 
     <div class="form-group">
@@ -100,14 +108,20 @@
         </textarea>
       </div>
 
-      <button class="btn btn-primary">
-        Save Supplier </button>
 
     </div>
 
 
-</form>
+ <!-- <button class="btn btn-primary" (click)="saveSupplier()">
+       Save Supplier </button>-->
 
-<div class="alert alert-success">
-  {{suppliermaintainform.value | json}}
+       <button class="btn btn-primary" (click)="saveSupplier()">
+        Save Supplier </button>
+
+  </form>
+
+  <div class="alert alert-success">
+    {{suppliermaintainform.value | json}}
+  </div>
+
 </div>
